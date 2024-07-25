@@ -52,45 +52,7 @@
                     "sku": "<sku>",
                     "version": "<version>"
             },
-            "customize": [
-                    {
-                        "type": "PowerShell",
-                        "name": "Win10reg",
-                        "runElevated": true,
-                        "runAsSystem": true,
-                        "scriptUri": "https://raw.githubusercontent.com/knowledgebaseit/AIB/main/Customize/Win10reg/Win10reg.ps1"
-                    },
-                    {
-                        "type": "PowerShell",
-                        "name": "Languagepack",
-                        "runElevated": true,
-                        "runAsSystem": true,
-                        "scriptUri": "<languagepack>"
-                    },
-                    {
-                        "type": "WindowsRestart",
-                        "restartCheckCommand": "write-host 'restarting post Office installation'",
-                        "restartTimeout": "10m"
-                    },     
-                    {
-                        "type": "PowerShell",
-                        "name": "Office",
-                        "runElevated": true,
-                        "runAsSystem": true,
-                        "scriptUri": "<office>"
-                    },
-                    {
-                        "type": "PowerShell",
-                        "name": "Teams",
-                        "runElevated": true,
-                        "runAsSystem": true,
-                        "scriptUri": "<teams>"
-                    },
-                    {
-                        "type": "WindowsRestart",
-                        "restartCheckCommand": "write-host 'restarting post Office installation'",
-                        "restartTimeout": "5m"
-                    },                    
+            "customize": [                    
                     {
                         "type": "WindowsUpdate",
                         "searchCriteria": "IsInstalled=0",
